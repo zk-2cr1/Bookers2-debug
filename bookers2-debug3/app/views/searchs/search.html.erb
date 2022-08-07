@@ -1,0 +1,10 @@
+
+  <!--検索対象モデルがUserの時 -->
+<% if @range == "User" %>
+  <h1>Users search for "<%= @word %>"</h1>
+  <%= render 'users/index', users: @users %>
+<% else %>
+<!--検索対象モデルがUserではない時(= 検索対象モデルがBookの時) -->
+  <h1>Books search for "<%= @word %>"</h1>
+  <%= render 'books/index', books: @books %>
+<% end %>

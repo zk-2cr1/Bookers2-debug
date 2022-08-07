@@ -67,4 +67,6 @@ def self.looks(search,word)
   end
 end
 
+
+
 end
